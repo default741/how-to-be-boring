@@ -23,6 +23,24 @@ export default function Terminal() {
         scrollToBottom();
     }, [history, isOpen]);
 
+    // Listener for Forbidden Light Mode Easter Egg
+    useEffect(() => {
+        const handleLightModeError = () => {
+            setIsOpen(true);
+            setHistory(prev => [
+                ...prev,
+                { type: 'input', content: 'sudo systemctl start light-mode.service' },
+                { type: 'system', content: 'Accessing visual cortex drivers...' },
+                { type: 'output', content: 'CRITICAL ERROR: Light mode causes quantum decoherence.' },
+                { type: 'output', content: 'Reverting to Dark State to preserve wavefunction stability.' },
+                { type: 'system', content: 'Action Denied.' }
+            ]);
+        };
+
+        window.addEventListener('open-terminal-error', handleLightModeError);
+        return () => window.removeEventListener('open-terminal-error', handleLightModeError);
+    }, []);
+
     const handleCommand = async (cmd: string) => {
         const trimmedCmd = cmd.trim().toLowerCase();
 
