@@ -1,0 +1,56 @@
+Abde Manaaf Ghadiali  Machine Learning Engineer
+abdemanaaf.ghadiali.1998@gmail.com	 +1 (703)-216-0963	 Arlington, Virginia, 22202	 LinkedIn	 GitHub
+
+Machine Learning Engineer with 5+ years' experience spanning applied ML and research in quantum algorithms. Delivered scalable AI systems in predictive analytics, deep learning, and LLM fine-tuning across GCP, AWS, and Azure. Proven ability to turn cutting-edge research into production-ready solutions driving measurable business and scientific impact.
+PROFESSIONAL  EXPERIENCE	
+Machine Learning Engineer, ScriptChain Health	Oct 2025 - Present | Arlington, VA, USA
+Optimized large-scale healthcare data workflows using Python (pandas, PyTorch) by refactoring preprocessing and feature extraction pipelines, improving runtime efficiency and data consistency for multimodal patient datasets used in machine learning analysis.
+Designed and implemented GATE-based deep learning architectures integrating clinical and structured patient data to enhance predictive accuracy, interpretability, and scalability of healthcare AI models used for outcome prediction and risk assessment.
+Standardized and automated preprocessing frameworks with Python and SQL to harmonize diverse medical data sources, reducing inconsistencies and manual intervention while ensuring reproducibility, auditability, and compliance with operational data quality standards.
+
+Research Assistant, George Washington University
+
+Jun 2025 - Sep 2025 | Washington, DC, USA
+
+Developed a full-stack LMS platform using Python (FastAPI) and Next.js with adaptive exams, real-time analytics, and automated data pipelines that enabled personalized feedback and dynamic learning insights, improving student engagement and exam performance by 20%.
+Designed and implemented quantum optimization algorithms using Qiskit, conducted large-scale performance benchmarking and data analysis, and validated quantum-classical speedups, contributing to peer-reviewed research in variational optimization.
+
+Graduate Teaching Assistant, George Washington University
+
+May 2024 - May 2025 | Washington, DC, USA
+
+Mentored 50+ students in data structures, algorithms, and software engineering, delivering hands-on labs and targeted review sessions that improved conceptual mastery and raised class exam averages by 10% across multiple courses.
+Collaborated with faculty to design interactive lab exercises and real-world case studies, enhancing student engagement and bridging theory with practical coding applications using Python, Java, and visualization tools like Matplotlib and Tkinter.
+ML Engineer and Data Scientist, Thoucentric (A Xoriant Company)	Jan 2020 - Aug 2023 | Bengaluru, India
+Engineered ML pipelines to predict manufacturing defects, achieving 93% detection accuracy and reducing defect rates by 40%, which cut manual inspection costs by 60% and improved production efficiency across multiple automotive lines.
+Refactored and optimized forecasting pipelines on GCP with Databricks, PySpark, and FastAPI, boosting accuracy by 15-20% and enabling real-time predictions that generated multimillion-dollar savings in distribution planning.
+Developed production-grade APIs and containerized ML services using FastAPI, Docker, and CI/CD, ensuring scalable, low-latency deployment of predictive models across cloud platforms (GCP, Azure).
+Built interactive dashboards and visualization tools with Power BI, Dash, and Plotly, translating model outputs and KPIs into actionable insights for engineers and business stakeholders.
+Partnered with cross-functional teams of domain experts and data engineers to align ML initiatives with business KPIs, ensuring model interpretability, compliance, and measurable impact on quality control and operational performance.
+TECHNICAL SKILLS	
+Programming & Frameworks - Python, Java, PyTorch, PyGeometric, TensorFlow, Scikit-learn, Hugging Face, Qiskit, SQL, NumPy, Pandas
+Machine Learning & AI - Predictive Modeling, Deep Learning, Feature Engineering, Transformers, LLM Fine-Tuning, Generative Models, Recommendation Systems, Graph Neural Networks (GCN, GAT, GraphSAGE), Model Evaluation & Optimization
+Data Engineering & Cloud - Databricks, PySpark, Snowflake, PostgreSQL, GCP, Azure, AWS, Data Pipelines, ETL Automation, Big Data Deployment & MLOps - FastAPI, Docker, CI/CD, Jenkins, Git, API Development, Model Serving, Monitoring, Scalability Optimization Visualization & Tools - Power BI, Dash, Plotly, Matplotlib, Tkinter, Data Visualization, KPI Dashboards, Statistical Analysis
+Soft Skills - Cross-Functional Collaboration, Leadership, Communication, Mentoring, Problem-Solving, Research, Teaching
+SELECTED PROJECTS	
+
+Personalized News Recommendation System Using GNN
+
+Aug 2024 - Dec 2024
+
+Developed a personalized news recommendation system using Python, PyTorch Geometric, and Sentence Transformers, implementing GCN, GAT, and GraphSAGE architectures to learn relational patterns among users, articles, and categories.
+Optimized model performance, achieving a 15× F1-score improvement and NDCG@15 > 0.7, significantly boosting content personalization, user engagement, and revenue potential for large-scale media platforms.
+
+AI-Generated Content Detection Pipeline Using Transformers
+
+Jan 2024 - May 2024
+
+Developed an NLP pipeline using Python, PyTorch, and Hugging Face Transformers to analyze 1.2M documents, fine-tuning RoBERTa, GPT, LLaMA, and Gemma models for AI-generated content detection.
+Achieved 98% accuracy by identifying stylistic and linguistic markers such as punctuation and sentence structure, reducing enterprise compliance risks and cutting manual review costs through automated document classification.
+EDUCATION	
+
+George Washington University, MS Computer Science (STEM)
+
+Aug 2023 - May 2025 | Washington, DC, USA
+
+GPA: 3.84 / 4.00 | Relevant Courses: Machine Learning, Deep Learning, Data Science, Artificial Intelligence, Quantum Computing
