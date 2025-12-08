@@ -37,7 +37,7 @@ export const projects: Project[] = [
         title: "News Recommendation System",
         description: "Graph-based personalized news recommendation system using Graph Neural Networks (GNNs). Integrated sentence transformer embeddings with user-article-category relations.",
         techStack: ["Python", "PyTorch Geometric", "GNNs", "RAG"],
-        github: "https://github.com/default741/new-recommendation-system",
+        github: "https://github.com/default741/news-recommendation-system",
         category: "ML/AI"
     },
     {

@@ -69,7 +69,7 @@ export default function Hobbies() {
                                 "Assassin's Creed Valhalla",
                                 "Resident Evil Series",
                                 "GTA San Andreas",
-                                "Clash of Clans (TH18)"
+                                "Clash of Clans (TH18 | Clan: TrunstileTime)"
                             ].map((game) => (
                                 <div key={game} className="bg-white/5 rounded-lg p-4 text-center hover:bg-white/10 transition-colors cursor-default border border-white/5 flex items-center justify-center">
                                     <span className="text-slate-300 font-medium">{game}</span>
