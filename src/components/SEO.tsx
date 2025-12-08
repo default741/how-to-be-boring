@@ -11,7 +11,7 @@ export default function SEO({
     description = "Machine Learning Engineer & Quantum Computing Researcher building intelligent systems.",
     image = "/images/pic.jpg"
 }: SEOProps) {
-    const siteUrl = "https://how-to-be-boring.vercel.app"; // Placeholder domain
+    const siteUrl = "https://default741.github.io/how-to-be-boring";
     const fullImage = image.startsWith('http') ? image : `${siteUrl}${image}`;
 
     return (

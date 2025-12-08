@@ -20,7 +20,7 @@ export default function Home() {
             <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-violet-500 rounded-full blur-xl opacity-50 group-hover:opacity-75 transition-opacity duration-500"></div>
             <div className="relative w-full h-full rounded-full overflow-hidden border-2 border-white/10 ring-4 ring-white/5">
               <Image
-                src="/images/pic.jpg"
+                src="/how-to-be-boring/images/pic.jpg"
                 alt="Abde Manaaf Ghadiali"
                 fill
                 className="object-cover"
