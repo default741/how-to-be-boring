@@ -6,6 +6,7 @@ export interface Experience {
     period: string;
     description: string[];
     skills: string[];
+    logo?: string;
 }
 
 export const experience: Experience[] = [
@@ -20,7 +21,8 @@ export const experience: Experience[] = [
             "Designed GATE-based deep learning architectures integrating clinical and structured patient data to enhance predictive accuracy for outcome risk assessment.",
             "Standardized automation frameworks with Python and SQL to harmonize diverse medical data sources, ensuring compliance and reducing manual intervention."
         ],
-        skills: ["Python", "PyTorch", "SQL", "Healthcare AI", "GATE"]
+        skills: ["Python", "PyTorch", "SQL", "Healthcare AI", "GATE"],
+        logo: "/how-to-be-boring/images/scriptchain_health_logo.png"
     },
     {
         id: "research-assistant-gwu",
@@ -32,7 +34,8 @@ export const experience: Experience[] = [
             "Developed a full-stack LMS platform (FastAPI, Next.js) with adaptive exams and real-time analytics, improving student engagement and exam performance by 20%.",
             "Designed and implemented quantum optimization algorithms using Qiskit, validating quantum-classical speedups for variational optimization research."
         ],
-        skills: ["FastAPI", "Next.js", "Qiskit", "Quantum Computing", "Full Stack"]
+        skills: ["FastAPI", "Next.js", "Qiskit", "Quantum Computing", "Full Stack"],
+        logo: "/how-to-be-boring/images/gwu-image.png"
     },
     {
         id: "gta-gwu",
@@ -44,7 +47,8 @@ export const experience: Experience[] = [
             "Mentored 50+ students in data structures, algorithms, and software engineering, delivering hands-on labs that raised class exam averages by 10%.",
             "Collaborated with faculty to design interactive lab exercises and real-world case studies using Python, Java, and visualization tools."
         ],
-        skills: ["Python", "Java", "Teaching", "Algorithms"]
+        skills: ["Python", "Java", "Teaching", "Algorithms"],
+        logo: "/how-to-be-boring/images/gwu-image.png"
     },
     {
         id: "ml-engineer-thoucentric",
@@ -59,6 +63,7 @@ export const experience: Experience[] = [
             "Built interactive dashboards (Power BI, Dash) to translate model outputs into actionable insights for stakeholders.",
             "Partnered with cross-functional teams to align ML initiatives with business KPIs, ensuring model interpretability and measurable operational impact."
         ],
-        skills: ["Python", "TensorFlow", "PyTorch", "GCP", "Azure", "Databricks", "Docker", "FastAPI"]
+        skills: ["Python", "TensorFlow", "PyTorch", "GCP", "Azure", "Databricks", "Docker", "FastAPI"],
+        logo: "/how-to-be-boring/images/thoucentric-image.svg"
     }
 ];

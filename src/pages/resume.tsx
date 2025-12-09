@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import { experience, Experience } from '../data/experience';
+import CompanyLogo from '../components/CompanyLogo';
 
 export default function Resume() {
     return (
@@ -24,11 +25,14 @@ export default function Resume() {
                     </a>
                 </div>
 
-                <div className="space-y-12 relative border-l border-white/10 ml-3 md:ml-6 pl-8 md:pl-12">
+                {/* Updated Timeline styling to accommodate larger logos */}
+                <div className="space-y-16 relative border-l-2 border-white/5 ml-6 md:ml-8 pl-8 md:pl-16">
                     {experience.map((exp: Experience) => (
                         <div key={exp.id} className="relative">
-                            {/* Timeline Dot */}
-                            <div className="absolute -left-[39px] md:-left-[55px] top-1 w-5 h-5 rounded-full border-4 border-background bg-slate-500"></div>
+                            {/* Creative Company Logo Layout */}
+                            <div className="absolute -left-[58px] md:-left-[88px] top-0 transition-transform duration-300 hover:scale-110">
+                                <CompanyLogo company={exp.company} logo={exp.logo} />
+                            </div>
 
                             <div className="flex flex-col md:flex-row md:items-baseline justify-between mb-2">
                                 <h3 className="text-2xl font-bold text-white">{exp.title}</h3>

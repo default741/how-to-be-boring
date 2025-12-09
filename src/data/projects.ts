@@ -37,7 +37,7 @@ export const projects: Project[] = [
         title: "News Recommendation System",
         description: "Graph-based personalized news recommendation system using Graph Neural Networks (GNNs). Integrated sentence transformer embeddings with user-article-category relations.",
         techStack: ["Python", "PyTorch Geometric", "GNNs", "RAG"],
-        github: "https://github.com/default741/news-recommendation-system",
+        github: "https://github.com/default741/new-recommendation-system",
         category: "ML/AI"
     },
     {
@@ -56,11 +56,11 @@ export const projects: Project[] = [
         category: "Other"
     },
     {
-        id: "old-portfolio",
-        title: "Old Portfolio Site",
-        description: "My previous personal website for portfolio and blog, built with SCSS.",
-        techStack: ["SCSS", "HTML", "JS"],
-        github: "https://github.com/default741/old-portfolio-site",
+        id: "notivius",
+        title: "Notivius",
+        description: "A centralized notification management system designed to orchestrate and batch alerts across email, SMS, and push channels. Features customizable routing rules and quiet hours.",
+        techStack: ["TypeScript", "Node.js", "Redis", "System Design"],
+        github: "https://github.com/default741/notivius",
         category: "Web"
     }
 ];

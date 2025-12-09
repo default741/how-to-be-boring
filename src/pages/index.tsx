@@ -48,7 +48,7 @@ export default function Home() {
                 speed={50}
                 repeat={Infinity}
                 className="text-primary/90"
-              />
+              /> Computing
             </div>
           </h1>
 
