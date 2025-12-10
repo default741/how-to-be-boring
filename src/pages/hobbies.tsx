@@ -1,12 +1,12 @@
 import Head from 'next/head';
-import { FaBookOpen, FaGamepad, FaTrophy } from 'react-icons/fa6';
+import { FaBookOpen, FaGamepad, FaTrophy, FaYoutube } from 'react-icons/fa6';
 
 export default function Hobbies() {
     return (
         <>
             <Head>
                 <title>Downtime | Abde Manaaf Ghadiali</title>
-                <meta name="description" content="Books and Games I enjoy" />
+                <meta name="description" content="Books, Games, and Channels I enjoy" />
             </Head>
             <div className="container mx-auto py-24 px-4 max-w-6xl">
                 <div className="text-center mb-20">
@@ -14,11 +14,12 @@ export default function Hobbies() {
                         The Off-Hours.
                     </h1>
                     <p className="text-slate-400 text-lg max-w-2xl mx-auto">
-                        When I'm not optimizing gradients or training models, I'm usually leveling up characters or expanding my mind.
+                        When I'm not optimizing gradients or training models, I'm usually leveling up characters, expanding my mind, or binge-watching educational content.
                     </p>
                 </div>
 
-                <div className="grid lg:grid-cols-2 gap-12 lg:gap-20">
+                {/* Top Section: Library & Arcade */}
+                <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 mb-20">
                     {/* The Library Section */}
                     <section className="relative">
                         <div className="flex items-center gap-4 mb-10">
@@ -75,6 +76,10 @@ export default function Hobbies() {
                                 { name: "Assassin's Creed Valhalla", genre: "RPG", icon: "⚔️", bg: "from-teal-600 to-cyan-600" },
                                 { name: "Resident Evil Series", genre: "Horror", icon: "🧟", bg: "from-red-900 to-red-600" },
                                 { name: "GTA San Andreas", genre: "Open World", icon: "🔫", bg: "from-green-600 to-yellow-600" },
+                                { name: "Tekken", genre: "Fighting", icon: "🥊", bg: "from-yellow-600 to-red-600" },
+                                { name: "Dragon Ball Z: Kakarot", genre: "Action RPG", icon: "🐉", bg: "from-orange-500 to-yellow-500" },
+                                { name: "The Witcher 3", genre: "RPG", icon: "🐺", bg: "from-stone-700 to-slate-500" },
+                                { name: "Mortal Kombat", genre: "Fighting", icon: "🥋", bg: "from-red-900 to-stone-800" },
                             ].map((game) => (
                                 <div key={game.name} className="group relative overflow-hidden rounded-2xl bg-white/5 border border-white/10 p-6 h-32 hover:border-white/20 transition-all hover:scale-[1.02] hover:shadow-2xl">
                                     <div className={`absolute inset-0 bg-gradient-to-br ${game.bg} opacity-0 group-hover:opacity-20 transition-opacity duration-500`}></div>
@@ -106,6 +111,36 @@ export default function Hobbies() {
                         </div>
                     </section>
                 </div>
+
+                {/* Bottom Section: The Watchlist */}
+                <section className="relative border-t border-white/5 pt-20">
+                    <div className="flex items-center justify-center gap-4 mb-12">
+                        <div className="p-3 bg-red-500/10 rounded-xl">
+                            <FaYoutube className="text-red-500 text-2xl" />
+                        </div>
+                        <h2 className="text-3xl font-bold text-white">The Watchlist</h2>
+                    </div>
+
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+                        {youtubeChannels.map((channel) => (
+                            <a
+                                key={channel.name}
+                                href={`https://www.youtube.com/results?search_query=${encodeURIComponent(channel.name)}`}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="group flex items-start p-4 rounded-xl bg-white/5 border border-white/5 hover:bg-white/10 hover:border-red-500/30 transition-all h-full"
+                            >
+                                <div className="mt-1 mr-3 min-w-[20px]">
+                                    <div className={`w-2 h-2 rounded-full mt-1.5 ${channel.color}`}></div>
+                                </div>
+                                <div>
+                                    <h3 className="text-white font-bold group-hover:text-red-400 transition-colors">{channel.name}</h3>
+                                    <p className="text-xs text-slate-400 mt-1 leading-relaxed">{channel.desc}</p>
+                                </div>
+                            </a>
+                        ))}
+                    </div>
+                </section>
             </div>
         </>
     );
@@ -124,3 +159,16 @@ function BookCard({ book }: { book: { title: string, author: string, tag: string
         </div>
     )
 }
+
+const youtubeChannels = [
+    { name: "Think School", desc: "Business Case Studies & Geopolitics", color: "bg-yellow-500" },
+    { name: "LEMMiNO", desc: "High-quality Documentaries & Mysteries", color: "bg-indigo-500" },
+    { name: "Computerphile", desc: "Deep Dives into CS Concepts", color: "bg-blue-500" },
+    { name: "James Veitch", desc: "Comedy, Spam Emails & Rubber Ducks", color: "bg-pink-500" },
+    { name: "Corey Schafer", desc: "Python Tutorials & Software Eng.", color: "bg-teal-500" },
+    { name: "ArjanCodes", desc: "Software Design Patterns & Architecture", color: "bg-orange-500" },
+    { name: "Kyle Hill", desc: "Science, Nuclear Physics & Pop Culture", color: "bg-emerald-500" },
+    { name: "PBS Space Time", desc: "Astrophysics & Quantum Mechanics", color: "bg-violet-500" },
+    { name: "Vsauce", desc: "Scientific Curiosities & Philosophy", color: "bg-green-500" },
+    { name: "Dude Perfect", desc: "Trick Shots & Entertainment", color: "bg-cyan-500" },
+];
