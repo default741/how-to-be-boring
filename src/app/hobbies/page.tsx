@@ -6,7 +6,7 @@ import { bookShelves, channels, featuredGame, games } from '@/data/hobbies';
 import { absoluteUrl } from '@/lib/site';
 
 export const metadata: Metadata = {
-    title: 'Downtime',
+    title: 'Hobbies',
     description: 'Books, games, and channels that shape how I think when I am off the clock.',
     alternates: {
         canonical: absoluteUrl('/hobbies'),
@@ -17,7 +17,7 @@ export default function HobbiesPage() {
     return (
         <section className="mx-auto flex w-full max-w-6xl flex-col gap-10 px-4 pb-24 pt-10 sm:px-6 lg:px-8 lg:pt-16">
             <PageIntro
-                eyebrow="Downtime"
+                eyebrow="Hobbies"
                 title="The inputs I choose when I am not building software."
                 description="Reading, games, and long-form video are where I usually refill attention and curiosity before returning to technical work."
             />

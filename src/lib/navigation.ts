@@ -3,6 +3,7 @@ export const primaryNavigation = [
     { title: 'Projects', href: '/projects' },
     { title: 'Awards', href: '/awards' },
     { title: 'Skills', href: '/skills' },
+    { title: 'Hobbies', href: '/hobbies' },
     { title: 'Blog', href: '/blog' },
     { title: 'Contact', href: '/contact' },
 ] as const;
