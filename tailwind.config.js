@@ -1,19 +1,24 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+    darkMode: 'class',
     content: [
+        "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
         "./src/pages/**/*.{js,ts,jsx,tsx}",
         "./src/components/**/*.{js,ts,jsx,tsx}",
+        "./src/lib/**/*.{js,ts,jsx,tsx,mdx}",
     ],
     theme: {
         extend: {
             colors: {
-                background: "#09090b", // Zinc 950 - Modern Dark
-                foreground: "#f4f4f5", // Zinc 100
-                primary: "#3b82f6",    // Blue 500
-                secondary: "#8b5cf6",  // Violet 500
-                accent: "#10b981",     // Emerald 500
-                surface: "#18181b",    // Zinc 900
-                "surface-hover": "#27272a", // Zinc 800
+                background: "rgb(var(--background) / <alpha-value>)",
+                foreground: "rgb(var(--foreground) / <alpha-value>)",
+                primary: "rgb(var(--primary) / <alpha-value>)",
+                secondary: "rgb(var(--secondary) / <alpha-value>)",
+                accent: "rgb(var(--accent) / <alpha-value>)",
+                surface: "rgb(var(--surface) / <alpha-value>)",
+                "surface-elevated": "rgb(var(--surface-elevated) / <alpha-value>)",
+                border: "rgb(var(--border) / <alpha-value>)",
+                muted: "rgb(var(--muted) / <alpha-value>)",
             },
             fontFamily: {
                 sans: ['var(--font-inter)', 'system-ui', 'sans-serif'],

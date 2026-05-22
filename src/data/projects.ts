@@ -5,62 +5,48 @@ export interface Project {
     techStack: string[];
     link?: string;
     github?: string;
-    category: "Quantum" | "ML/AI" | "Web" | "Other";
+    category: "Systems" | "ML/AI" | "Robotics";
 }
 
 export const projects: Project[] = [
     {
-        id: "graph-coloring-quantum",
-        title: "Graph Coloring Using Quantum Circuits",
-        description: "Implemented Grover's Algorithm from scratch to solve 2- and 3-node graph coloring problems. Designed a quantum oracle to validate node color similarity and encoded constraints in superposition states.",
-        techStack: ["Python", "Qiskit", "IBM Quantum", "Grover's Algorithm"],
-        github: "https://github.com/default741/graph-coloring-quantum-circuits",
-        category: "Quantum"
-    },
-    {
-        id: "q-ram",
-        title: "4-Qubit Quantum-RAM",
-        description: "Built Q-RAM circuits for 1-, 2-, and 4-bit memory using efficient gate-level encoding. Implemented quantum address decoding and memory retrieval logic.",
-        techStack: ["Python", "Qiskit", "Quantum Memory"],
-        category: "Quantum"
-    },
-    {
-        id: "ai-text-detection",
-        title: "AI Generated Text Detection Tool",
-        description: "Developed an NLP pipeline analyzing 1.2M documents to detect AI-generated content. Fine-tuned RoBERTa, GPT, and LLaMA models, achieving 98% accuracy.",
-        techStack: ["Python", "PyTorch", "Transformers", "NLP", "LLMs"],
-        github: "https://github.com/default741/ai-text-detection",
-        category: "ML/AI"
+        id: "monday-kernel",
+        title: "Monday Kernel",
+        description: "A local-first personal OS that combines Rust, Python, and C# services with GraphRAG over Neo4j and ChromaDB to retrieve context from real user activity, notes, and voice transcripts.",
+        techStack: ["Rust", "FastAPI", "C#/.NET", "GraphRAG", "Neo4j + ChromaDB"],
+        github: "https://github.com/default741/monday-kernel",
+        category: "Systems"
     },
     {
         id: "news-recommender",
-        title: "News Recommendation System",
-        description: "Graph-based personalized news recommendation system using Graph Neural Networks (GNNs). Integrated sentence transformer embeddings with user-article-category relations.",
-        techStack: ["Python", "PyTorch Geometric", "GNNs", "RAG"],
+        title: "News Recommendation System Using GNN",
+        description: "A graph-based news recommender built with heterogeneous user, article, and category graphs plus sentence-transformer embeddings, achieving MRR 1.0 and NDCG@15 above 0.7 while beating baseline methods.",
+        techStack: ["Python", "PyTorch Geometric", "Sentence Transformers", "GCN / GAT / GraphSAGE"],
         github: "https://github.com/default741/new-recommendation-system",
         category: "ML/AI"
     },
     {
+        id: "ai-text-detection",
+        title: "AI Generated Text Detection Tool",
+        description: "A large-scale NLP pipeline that processed 1.2M+ texts and fine-tuned RoBERTa, Llama, and Gemma models to 98% accuracy for AI-generated content detection.",
+        techStack: ["Python", "PyTorch", "Transformers", "RoBERTa / Llama / Gemma"],
+        github: "https://github.com/default741/ai-text-detection",
+        category: "ML/AI"
+    },
+    {
         id: "audio-lang-detection",
-        title: "Language Detection from Audio",
-        description: "Built a multilingual classifier trained on 300K audio samples. Trained CNNs and transformer models, achieving 98% classification accuracy.",
-        techStack: ["Python", "TensorFlow", "Audio Transformers", "Librosa"],
+        title: "Multilingual Language Detection from Audio",
+        description: "A multilingual speech classifier trained on 300K+ audio samples using CNNs and audio transformers, reaching 98-99% accuracy across languages and accents.",
+        techStack: ["Python", "TensorFlow", "PyTorch", "Librosa", "Audio Transformers"],
         github: "https://github.com/default741/speak-sense",
         category: "ML/AI"
     },
     {
         id: "drone-path",
         title: "Drone Path Planning",
-        description: "Designed real-time navigation using Dynamic A* and particle filters to avoid moving obstacles. Developed a visualization toolkit to simulate drone mobility.",
-        techStack: ["Python", "NumPy", "Path Planning", "Robotics"],
-        category: "Other"
-    },
-    {
-        id: "notivius",
-        title: "Notivius",
-        description: "A centralized notification management system designed to orchestrate and batch alerts across email, SMS, and push channels. Features customizable routing rules and quiet hours.",
-        techStack: ["TypeScript", "Node.js", "Redis", "System Design"],
-        github: "https://github.com/default741/notivius",
-        category: "Web"
+        description: "A dynamic path-planning simulator that combines D* replanning and particle filters to navigate uncertain moving obstacles in real time.",
+        techStack: ["Python", "Dynamic A*", "Particle Filters", "NumPy + Matplotlib"],
+        github: "https://github.com/default741/drone-path-planning",
+        category: "Robotics"
     }
 ];
