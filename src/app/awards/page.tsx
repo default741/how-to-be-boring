@@ -2,14 +2,20 @@ import type { Metadata } from 'next';
 import Image from 'next/image';
 import { ArrowUpRight } from 'lucide-react';
 
+import CertificateCarouselCard from '@/components/site/CertificateCarouselCard';
 import PageIntro from '@/components/site/PageIntro';
-import { awardCredentials } from '@/data/awards';
+import { awardCredentials, certificateCarousels } from '@/data/awards';
 import { absoluteUrl, withBasePath } from '@/lib/site';
 
 const recognitions = awardCredentials.filter((item) => item.type === 'image');
 const certificates = awardCredentials.filter((item) => item.type === 'pdf');
+const carouselCertificateCount = certificateCarousels.reduce((total, carousel) => total + carousel.slides.length, 0);
 const recognitionCount = recognitions.length;
-const certificateCount = certificates.length;
+const certificateCount = certificates.length + carouselCertificateCount;
+
+function toAwardAssetPath(filename: string) {
+    return withBasePath(`/images/awards/${encodeURIComponent(filename)}`);
+}
 
 export const metadata: Metadata = {
     title: 'Awards & Certifications',
@@ -52,7 +58,7 @@ export default function AwardsPage() {
 
                 <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
                     {recognitions.map((item, index) => {
-                    const assetPath = withBasePath(`/images/awards/${item.filename}`);
+                        const assetPath = toAwardAssetPath(item.filename);
 
                         return (
                             <a
@@ -97,8 +103,22 @@ export default function AwardsPage() {
                 </div>
 
                 <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+                    {certificateCarousels.map((carousel) => (
+                        <CertificateCarouselCard
+                            key={carousel.title}
+                            title={carousel.title}
+                            issuer={carousel.issuer}
+                            label={carousel.label}
+                            description={carousel.description}
+                            slides={carousel.slides.map((slide) => ({
+                                title: slide.title,
+                                assetPath: toAwardAssetPath(slide.filename),
+                            }))}
+                        />
+                    ))}
+
                     {certificates.map((item) => {
-                        const assetPath = withBasePath(`/images/awards/${item.filename}`);
+                        const assetPath = toAwardAssetPath(item.filename);
 
                         return (
                             <a

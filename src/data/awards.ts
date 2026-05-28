@@ -7,6 +7,19 @@ export interface AwardCredential {
     label: string;
 }
 
+export interface CertificateCarouselSlide {
+    title: string;
+    filename: string;
+}
+
+export interface CertificateCarousel {
+    title: string;
+    issuer: string;
+    label: string;
+    description: string;
+    slides: CertificateCarouselSlide[];
+}
+
 export const awardCredentials: AwardCredential[] = [
     {
         title: 'Atlas Award',
@@ -79,5 +92,28 @@ export const awardCredentials: AwardCredential[] = [
         filename: 'core-java-training.pdf',
         accent: 'from-orange-600 to-red-600',
         label: 'Certificate',
+    },
+];
+
+export const certificateCarousels: CertificateCarousel[] = [
+    {
+        title: 'SQL Certification Track',
+        issuer: 'HackerRank',
+        label: 'Certificate Series',
+        description: 'Grouped view of the HackerRank SQL certifications across the basic, intermediate, and advanced levels.',
+        slides: [
+            {
+                title: 'SQL (Basic)',
+                filename: 'sql_basic certificate_page.jpg',
+            },
+            {
+                title: 'SQL (Intermediate)',
+                filename: 'sql_intermediate certificate.jpg',
+            },
+            {
+                title: 'SQL (Advanced)',
+                filename: 'sql_advanced certificate.jpg',
+            },
+        ],
     },
 ];
